@@ -1,7 +1,9 @@
 # Introduction
 
 In this series of sessions we are going to learn the fundamentals of programming.
+
 Programming is actually pretty simple once you understand a small set of fundamental concepts.
+
 Many programming languages share these same concepts so once you learn how to use one language it's much easier to pick up another.
 
 Our goal is to get over the initial hurdles so you can start teaching yourself to code if you wish
@@ -49,29 +51,20 @@ So our python text files are run by the python interpreter, making Python an int
 Here is an example of some python code. You don't need to understand any of it now, but soon you will know what every character does.
 
 ```py
-class Bicycle():
-    def __init(self, name:str, price:float, is_sold:bool = False):
-        self.name = name
-        self.price = price
-        self.is_sold = is_sold
+# Create a sentence from a list of words
 
-stock = [
-        Bicycle("Specialized", 200000),
-        Bicycle("Santa Cruz ", 100000, True),
-        Bicycle("FunctionsBianchi", 900000)
-    ]
+word_list = []
 
-def sum_stock_value(bicycles: List[Bicycle]):
-    total = 0
-    for bike in bicycles:
-        if not bike.is_sold:
-            total = total + bike.price
-    return total
+word_list.append("A")
+word_list.append("dog")
 
-current_stock_value = sum_stock_value(stock)
-print(current_stock_value)
+sentence = ""
 
-# Output = 1200000
+for word in word_list:
+    sentence = sentence + " " + word
+
+print(sentence)
+# Output: " A dog"
 ```
 
 ## Variables and memory
@@ -198,3 +191,33 @@ Python is a popular high-level, dynamically typed, and interpreted language.
 ## Next
 
 We will actually write a "useful" program
+
+---
+
+## Scrap
+
+```py
+class Bicycle():
+    def __init(self, name:str, price:float, is_sold:bool = False):
+        self.name = name
+        self.price = price
+        self.is_sold = is_sold
+
+stock = [
+        Bicycle("Specialized", 200000),
+        Bicycle("Santa Cruz ", 100000, True),
+        Bicycle("FunctionsBianchi", 900000)
+    ]
+
+def sum_stock_value(bicycles: List[Bicycle]):
+    total = 0
+    for bike in bicycles:
+        if not bike.is_sold:
+            total = total + bike.price
+    return total
+
+current_stock_value = sum_stock_value(stock)
+print(current_stock_value)
+
+# Output: 1200000
+```
