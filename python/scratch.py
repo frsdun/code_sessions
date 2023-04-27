@@ -21,3 +21,12 @@ def sum_stock_value(bicycles: List[Bicycle]):
 
 current_stock_value = sum_stock_value(stock)
 print(current_stock_value)
+
+
+def does_soc_have_a_beard(men_have_beard:bool):
+    if men_have_beard == True:
+        print("yes")
+    else:
+        print("no")
+
+does_soc_have_a_beard(True)
