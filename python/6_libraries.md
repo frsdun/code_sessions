@@ -1,6 +1,8 @@
-# code_sessions
+# Libraries
 
-An introduction to programming
+# Global and local environments
+
+# pip and venv
 
 ```bash
 python -m venv .venv
